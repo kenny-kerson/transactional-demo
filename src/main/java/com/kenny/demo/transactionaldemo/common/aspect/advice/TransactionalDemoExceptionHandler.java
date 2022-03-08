@@ -1,4 +1,4 @@
-package com.kenny.demo.transactionaldemo.common.advice;
+package com.kenny.demo.transactionaldemo.common.aspect.advice;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

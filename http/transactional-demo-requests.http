@@ -1,0 +1,21 @@
+###
+POST http://localhost:8080/transfer
+Content-Type: application/json
+
+{
+  "customerNo": "11000000339",
+  "guid": "20220308202300001",
+  "body": {
+    "withdrawAccountNo": "3333018070932",
+    "withdrawAmount": "10000",
+    "depositBankCode": "081",
+    "depositAccountNo": "28891006028507"
+
+  }
+}
+
+<> 2022-03-08T202613.200.json
+<> 2022-03-08T202554.200.json
+<> 2022-03-08T202552.200.json
+<> 2022-03-08T202542.200.json
+<> 2022-03-08T202108.400.json
