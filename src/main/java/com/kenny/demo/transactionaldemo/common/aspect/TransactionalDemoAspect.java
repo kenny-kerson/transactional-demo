@@ -4,9 +4,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
 
 @Slf4j
 @Aspect
+@Component
 public class TransactionalDemoAspect {
 
     @Around("execution(* com.kenny.demo.transactionaldemo.ui..*.*(..))")
@@ -15,16 +17,17 @@ public class TransactionalDemoAspect {
 
         Object result;
         try {
+            log.debug( "__KENNY__ commonControllerAspect Try");
+
             result = pjp.proceed();
 
-
         } catch ( Exception e ) {
-            log.debug( "__KENNY__ commonControllerAspect catch : ", e);
+            log.debug( "__KENNY__ commonControllerAspect Catch : ", e);
 
             throw e;
 
         } finally {
-            log.debug( "__KENNY__ commonControllerAspect finally");
+            log.debug( "__KENNY__ commonControllerAspect Finally");
         }
 
         return result;

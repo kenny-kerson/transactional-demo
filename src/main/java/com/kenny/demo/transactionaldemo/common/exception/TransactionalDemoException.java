@@ -1,5 +1,8 @@
 package com.kenny.demo.transactionaldemo.common.exception;
 
+import lombok.Getter;
+
+@Getter
 public class TransactionalDemoException extends RuntimeException {
 
     private final String errorCode;
