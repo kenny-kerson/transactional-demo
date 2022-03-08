@@ -22,7 +22,7 @@ public class TransactionalDemoAspect {
             result = pjp.proceed();
 
         } catch ( Exception e ) {
-            log.debug( "__KENNY__ commonControllerAspect Catch : ", e);
+            log.debug( "__KENNY__ commonControllerAspect Catch" );
 
             throw e;
 
