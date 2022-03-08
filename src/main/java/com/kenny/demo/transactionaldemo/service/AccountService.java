@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 @Service
 public class AccountService {
 
-    // (리팩토링) 고수준모듈이 저수준모듈을 직접 참조하고 있으므로 수정 필요 p
+    // (리팩토링) 고수준모듈이 저수준모듈을 직접 참조하고 있으므로 수정 필요
     private final AccountRepository accountRepository;
 
     /**
