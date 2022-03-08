@@ -18,9 +18,11 @@ public class TransferDto {
     @Getter @ToString
     @Builder
     public static class Out {
+        private String withdrawAccountNo;
+        private String withdrawAmount;
         private String depositBankCode;
         private String depositAccountNo;
-        private String withdrawAmount;
+        private String withdrawAccountBalance;
         private String depositCustomerName;
     }
 }

@@ -21,4 +21,8 @@ public class Account {
     private String customerNo;
     private String changeDate;
     private String changeTime;
+
+    public void withdraw(final BigDecimal amount) {
+        this.amount = this.amount.add(amount.negate());
+    }
 }
