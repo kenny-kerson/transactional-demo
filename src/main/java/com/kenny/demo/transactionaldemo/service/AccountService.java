@@ -7,6 +7,7 @@ import com.kenny.demo.transactionaldemo.repository.AccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
@@ -21,6 +22,7 @@ public class AccountService {
     /**
      * 이체 메서드
      */
+    @Transactional
     public Account transfer( final String withdrawAccountNo, final String depositBankCode, final String depositAccountNo, final String withdrawAmount) {
 
         final Account account = accountRepository.findById(withdrawAccountNo)

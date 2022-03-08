@@ -1,14 +1,15 @@
 package com.kenny.demo.transactionaldemo.domain;
 
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 
-@ToString
-@Getter
+
+@Getter @ToString
+@Builder
+@NoArgsConstructor @AllArgsConstructor
 @Entity
 @IdClass(TransactionLogPK.class)
 public class TransactionLog {
