@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.util.UUID;
+
 @Slf4j
 @RequiredArgsConstructor
 @RestControllerAdvice
@@ -30,7 +32,8 @@ public class TransactionalDemoExceptionHandler {
                 TransactionLog.builder()
                         .customerNo("11000000339")
                         .txDt("20220308")
-                        .sequenceNo("1")
+                        // (리팩토링) psql 시퀀스 로직으로 변경 필요
+                        .sequenceNo(UUID.randomUUID().toString())
                         .status("ERROR")
                         .input("TBD")
                         .output("TBD")

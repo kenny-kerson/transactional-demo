@@ -19,6 +19,7 @@ public class TransactionLog {
     @Id
     private String txDt;
     @Id
+    // (리팩토링) psql sequence 오브젝트 사용하도록 수정
     private String sequenceNo;
     private String status;
     private String input;
