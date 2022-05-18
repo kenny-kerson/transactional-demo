@@ -3,10 +3,10 @@ POST http://localhost:8080/transfer
 Content-Type: application/json
 
 {
-  "customerNo": "11000000339",
+  "customerNo": "12345678910",
   "guid": "20220308202300001",
   "body": {
-    "withdrawAccountNo": "3333018070932",
+    "withdrawAccountNo": "1000020000300",
     "withdrawAmount": "10000",
     "depositBankCode": "081",
     "depositAccountNo": "28891006028507"
@@ -25,10 +25,10 @@ POST http://localhost:8080/transfer
 Content-Type: application/json
 
 {
-  "customerNo": "11000000339",
+  "customerNo": "12345678910",
   "guid": "20220308202300001",
   "body": {
-    "withdrawAccountNo": "3333018070931",
+    "withdrawAccountNo": "1000020000300",
     "withdrawAmount": "10000",
     "depositBankCode": "081",
     "depositAccountNo": "28891006028507"
